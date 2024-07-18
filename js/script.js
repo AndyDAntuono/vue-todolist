@@ -39,7 +39,11 @@ createApp ({
             if (done = true) {
                 task.classList.add("text-decoration-line-through");
             }
-        }
+        },
+        //cancelTask ha il compito di rimuovere UN elemento dall'array di oggetti tasks
+        cancelTask(index) {
+           this.tasks.splice(index, 1);
+        },
         
     }
 }).mount('#app');

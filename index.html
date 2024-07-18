@@ -33,8 +33,8 @@
                             <!--utilizzo v-bind per legare l'attributo html al data item-text del vue-->
                             <div :class="item.done == true ? 'text-decoration-line-through' : ''">{{item.text}}</div>
                         <div class="buttons">
-                            <!--creo un bottone che avrà il compito di cancellare la task-->
-                            <button type="button" id="remove-btn" class="btn btn-danger">X</button>
+                            <!--creo un bottone che avrà il compito di cancellare la task tramite v-on dell'evento "cancelTask(index)"-->
+                            <button type="button" id="remove-btn" class="btn btn-danger" @click="cancelTask(index)">X</button>
                         </div>
                     </li>
                 </ul>
