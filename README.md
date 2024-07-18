@@ -13,3 +13,4 @@ Bonus: 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per agg
 
 - realizzo prima una struttura html della todolist sfruttando le classi di Boostrap 5.3
 - compilo una bozza del vue che ospiterà l'array di oggetti
+- sviluppo la condizione true per la proprietà done

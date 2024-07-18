@@ -27,11 +27,10 @@
 
                 <h1>TASKS</h1>
                 <ul>
-                    <li v-for="(tasks, index) in tasks">
+                    <li v-for="(item, index) in tasks">
                         <div class="d-flex justify-content-between">
-                            <div>{{tasks.text}}</div>
+                            <div :class="item.done == true ? 'text-decoration-line-through' : ''">{{item.text}}</div>
                         <div class="buttons"></div>
-                        </div>
                     </li>
                 </ul>
             </div>

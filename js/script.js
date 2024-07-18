@@ -31,5 +31,16 @@ createApp ({
             ]
         }
         
+    },
+
+    methods: {
+        toggleaskDone(index) {
+
+
+            if (done = true) {
+                task.classList.add("text-decoration-line-through");
+            }
+        }
+        
     }
 }).mount('#app');
