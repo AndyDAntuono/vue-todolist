@@ -25,25 +25,15 @@
                     </div>
                 </div>
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Task</th>
-                            <th scope="col">Azioni</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Vattelapesca</td>
-                            <td class="align-middle">
-                                <a href="#!" data-mdb-tooltip-init title="Done"><i
-                                    class="fas fa-check fa-lg text-success me-3"></i></a>
-                                <a href="#!" data-mdb-tooltip-init title="Remove"><i
-                                    class="fas fa-trash-alt fa-lg text-warning"></i></a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </div>
+                <h1>TASKS</h1>
+                <ul>
+                    <li v-for="(tasks, index) in tasks">
+                        <div class="d-flex justify-content-between">
+                            <div>{{tasks.text}}</div>
+                        <div class="buttons"></div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
