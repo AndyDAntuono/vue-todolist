@@ -6,8 +6,12 @@ createApp ({
             tasks: [
                 {
                     text: "Vattelapesca",
-                    //done: inserire booleano true or false,
+                    done: true, 
                 },
+                {
+                    text: "Fare la spesa",
+                    done: false, 
+                }
             ]
         }
     }
