@@ -3,12 +3,12 @@ const {createApp} = Vue;
 createApp ({
     data() {
         return {
-            tasks = [
+            tasks: [
                 {
                     text: "Vattelapesca",
-                    done: //inserire booleano true or false,
-                }
+                    //done: inserire booleano true or false,
+                },
             ]
         }
     }
-})
+}).mount('#app');
