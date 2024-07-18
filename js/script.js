@@ -28,7 +28,8 @@ createApp ({
                     text: "Contattare l'ingenier Cane riguado il ponte sullo stetto di Messina",
                     done: false,
                 }
-            ]
+            ],
+            newTask: []
         }
         
     },
@@ -47,7 +48,7 @@ createApp ({
         //addTask ha il compito di aggiungerre un nuovo elemento all'array di oggetti tasks
         addTask() {
             this.tasks.push(this.new_task);
-            this.new_task = null;
+            this.new_task;
         }
         
     }

@@ -17,9 +17,9 @@
                     <div class="card-body">
                         <form class="d-flex justify-content-center align-items-center mb-4">
                             <div data-mdb-input-init class="form-outline flex-fill">
-                              <input type="text" id="form2" placeholder="Aggiungi un nuova task..." class="form-control" />
+                              <input type="text" id="form2" placeholder="Aggiungi un nuova task..." class="form-control" v-model="new_task" />
                             </div>
-                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-info ms-2" @click="addTask(index)">Add</button>
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-info ms-2" @click="addTask">Add</button>
                         </form>
                     </div>
                 </div>
