@@ -29,7 +29,7 @@ createApp ({
                     done: false,
                 }
             ],
-            newTask: []
+            newtask: []
         }
         
     },
@@ -46,9 +46,9 @@ createApp ({
            this.tasks.splice(index, 1);
         },
         //addTask ha il compito di aggiungerre un nuovo elemento all'array di oggetti tasks
-        addTask() {
-            this.tasks.push(this.new_task);
-            this.new_task;
+        //non riesco ad aggiungere nuovo elemento ma è privo di testo, come se vue e/o javascript non predesse ciò che scrivo nel placeholder
+        addTask(new_task) {
+            this.tasks.push(new_task);
         }
         
     }
