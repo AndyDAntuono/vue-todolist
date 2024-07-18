@@ -27,10 +27,15 @@
 
                 <h1>TASKS</h1>
                 <ul>
+                    <!--Eseguo un v-for per eseguire un ciclo per generare un nuovo item tanti quanti sono gli oggetti nella array di oggetti-->
                     <li v-for="(item, index) in tasks">
                         <div class="d-flex justify-content-between">
+                            <!--utilizzo v-bind per legare l'attributo html al data item-text del vue-->
                             <div :class="item.done == true ? 'text-decoration-line-through' : ''">{{item.text}}</div>
-                        <div class="buttons"></div>
+                        <div class="buttons">
+                            <!--creo un bottone che avrà il compito di cancellare la task-->
+                            <button type="button" id="remove-btn" class="btn btn-danger">X</button>
+                        </div>
                     </li>
                 </ul>
             </div>

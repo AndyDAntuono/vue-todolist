@@ -34,9 +34,8 @@ createApp ({
     },
 
     methods: {
-        toggleaskDone(index) {
-
-
+        //controlDone ha il aggiungere la classe "text-decoration-line-through" SE il valore di Done equivale a true
+        controlDone() {
             if (done = true) {
                 task.classList.add("text-decoration-line-through");
             }

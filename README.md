@@ -11,6 +11,9 @@ Bonus: 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per agg
 
 /*SOLUZIONE*/
 
-- realizzo prima una struttura html della todolist sfruttando le classi di Boostrap 5.3
-- compilo una bozza del vue che ospiterà l'array di oggetti
-- sviluppo la condizione true per la proprietà done
+- realizzo prima una struttura html della todolist sfruttando le classi di Boostrap 5.3;
+- compilo una bozza del vue che ospiterà l'array di oggetti;
+- utilizzo v-for per creare un ciclo che mi pemetterà di generare tanti list tanti quanti sono gli oggetti dell'array di oggetti
+- sviluppo, nella sezione methods, la condizione true per la proprietà done per realizzare la prima milestone;
+- utilizzo v-bind per legare l'attributo html (il quale dice che se item.done è uguale a true deve aggiungere la calsse 'text-decoration-line-through') al data item-text del vue;
+- procedo a creare un bottone che avrà il conpito di elinare le task dalla todolist;
